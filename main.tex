@@ -4,33 +4,45 @@
 \usepackage[utf8]{inputenc}   % pro unicode UTF-8
 
 \usepackage{tabularx}
+\usepackage{ifthen}
 
-\title{FIplomová práce}
-\author{Maara at. al.}
+\def \studentname {Maara}
+\newboolean{studentisfemale}
+\setboolean{studentisfemale}{false}
+
 
 \begin{document}
+\pagestyle{empty}
 
 %\maketitle
 
-\section{Obálka}
+\section*{Obálka}
 
-\section{Zadání}
+\pagebreak
+\section*{Zadání}
 
-\textit{Každý ze skupiny dostane jiné zadání. Jejich témata budou odpovídat obsahu prezentace u obhajoby.}
+\textit{Každý ze skupiny dostane jiné zadání. Jejich témata budou odpovídat částem obsahu prezentace u obhajoby.}
 
-\section{Prohlášení}
+\pagebreak
+\section*{Prohlášení}
 
 Prohlašuji, že tento víkend strávím čestně a sportovně. Moje účast na Poznej FI je zcela dobrovolná, a nepřijel jsem jenom abych dostal lepší známku z informatiky. Slibuji, že nevyliju čaj do klávesnice, že nepřejedu žádný kabel židlí, ani že nevypiju všechnu kávu v kuchyňce na čtvrtém podlaží. Dále také slibuji, že se nebudu smát Maarovi, až si z něj Domča bude utahovat.
 
-\section{Poděkování}
+\vspace{20pt}
+\hspace*{\fill}\studentname
+
+\pagebreak
+\section*{Poděkování}
 
 Děkuji svým rodičům, že máme doma pořád plnou ledničku. Děkuji svému křečkovi Bobymu za to, že utekl zrovna před písemkou z matematiky a já ho musel nahánět, a nemusel jsem se na písemku učit. 
 
-\section{Shrnutí}
+\pagebreak
+\section*{Shrnutí}
 
 Poznej FI! je víkendová akce pořádaná Spolkem přátel severské zvěře (dále jen zvěřinec) v prostorách Fakulty informatiky Masarykovy univerzity (FI). Studenti budou moct poznat fakultu i z jiné strany, než je běžné studium. V rámci programu je připraveno několik workshopů, na kterých se studenti seznámí s výzkumem, který na fakultě probíhá a nahlédnou do některých laboratoří, kde si budou moct tyto věci vyzkoušet. Kromě této odborné části je připraven také zážitkový program, kde studenti navštíví i ukryté kouty fakulty - a to od garáží, přes posluchárny a knihovnu až po únikový východ z budovy.
 
-\section{Klíčová slova}
+\pagebreak
+\section*{Klíčová slova}
 
 \begin{description}
     \item[Fakulta informatiky] - budova v Brně na Botanické 68a s největším střešním bazenem ve městě. Taky tam učí informatiku
@@ -39,9 +51,9 @@ Poznej FI! je víkendová akce pořádaná Spolkem přátel severské zvěře (d
     \item[Učebna A217] - místo, kde si během Poznej FI! můžu nechat věci
     \item[Učebna A220] - místo, kam bych neměl chodit, protože tam organizátoři mají spoustu tajných věcí, které nesmím vidět
 \end{description}
-     
 
-\section{Obsah}
+\pagebreak
+\section*{Obsah}
 
 %\begin{table}[h!]
     \begin{tabularx}{\textwidth}{lX}
@@ -59,12 +71,20 @@ Poznej FI! je víkendová akce pořádaná Spolkem přátel severské zvěře (d
     \end{tabularx}
 %\end{table}
 
-\section{Úvod(ní formality)}
+\pagebreak
+\section*{Vítejte na Poznej FI!}
+
+Co budete potřebovat, kdy a kde
+
+Informace k jídlu
+
+Informace k ubytování
 
 
 
-\appendix
-\section{Závěr}
+\pagebreak
+\section*{Závěr}
+
 
 Zpětná vazba účastníků, dopis pro sebe, ...
 

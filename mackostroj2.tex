@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\mode<presentation> {
+    
+    \usetheme{Berlin} %
+    
+    \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\newcommand{\mypause}{}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[FIplomová práce]{\textbf{Mačkostroj}\\Obhajoba FIplomové práce} 
+\author{Poznej FI} % Your name
+\institute[FI MU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+    Fakulta informatiky, Masarykova univerzita \\ % Your institution for the title page
+    \medskip
+    \textit{poznej@fi.muni.cz} % Your email address
+}
+\date{} % Date, can be changed to a custom date
+
+\begin{document}
+    
+    \begin{frame}
+    \titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Obsah} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Úvod}
+\begin{frame}
+\frametitle{Principy fungování Mačkostroje}
+\begin{block}{Zákon zachovania mačky}
+Mačka vždy dopadne na všechny čtyři
+\end{block}
+\mypause
+\begin{block}{23. Murphyho zákon}
+Chleba vždy spadne na zem namazanou stranou
+\end{block}
+\mypause
+\begin{block}{Oklamova břitva}
+Nejjednodušší řešení je vždy to správné
+\end{block}
+\end{frame}
+
+\section{Prototypy}
+\begin{frame}
+\frametitle{Elektro-magnetický mačkostroj}
+    \textbf{Koncept:}  Kromě chleba připevníme na mačku i sadu magnetů. Jejich rotací vzniká elektromagnetické pole, které je na vnějším vinutí převáděno na elektrický proud
+    \mypause
+    \\
+    \vspace*{5pt}
+    \textbf{Realizace:}  Připevněním cizího předmětu na rotor se celý koncept rozpadne, protože rotor vždy dopadne na některý z magnetů
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Extrakce elektrostatické energie}
+    \textbf{Koncept:}  Při vhodné volbě vnitřního povrchu nádoby mačkostroje vzniká v kožichu statická elektina -- podobně jako při tření liščího ohonu o ebonitovou tyč
+    \mypause
+    \\
+    \vspace*{5pt}
+    \textbf{Realizace:}  Úspěšně jsme zrealizovali velmi krátký běh stroje. Toto zařízení je ale velmi nestabilní, takže uvedení stroje do praxe bude vyžadovat velmi důkladné prozkoumání všech doprovodných jevů a rizik. 
+\end{frame}
+
+%--------------------------
+\begin{frame}
+    \frametitle{Konstrukce}
+    \begin{itemize}
+        \item \textbf{Vnější nádoba}  byla vyrobena ze 100\% ebonitové síťoviny
+        \mypause
+        \item \textbf{Chleba}  byl použit typ Šumava, dostupný v libovolném supermarketu
+        \mypause
+        \item \textbf{Máslo}  je drahé, takže jsme to namazali Ramou
+        \mypause
+        \item \textbf{Mačku}  jsme si půjčili od sousedů. Kiki je taková velká, rezavá potvora co hrozně škrábe. 
+        \mypause
+        \item \textbf{Ocas}  rotoru jsme nabarvili na bílo, aby ebonit lépe fungoval
+    \end{itemize}
+\end{frame}
+
+%------------------------
+\section{Poznatky}
+\begin{frame}
+    \frametitle{Ovládání a nedostatky}
+    K ovládání mačkostroje jsme použili kus tuňáka. Vhodným umístěním v agregátu jsme tak mohli ovlivnit chování mačky uvnitř
+    \mypause \\ \vspace*{5pt}
+    
+    Výkon stroje je velmi výrazně ovlivněn náladou mačky uvnitř. Kožich naježené mačky má diametrálně rozdílné chování oproti mačce v klidu. Protože náladu ani názory maček nelze nijak ovlivnit, nemůžeme ani ovládat agregát
+    \mypause \\ \vspace*{5pt}
+    
+    Kvůli nedostatku ebonitových tyčí jsme postavili příliš malý stator. Měli jsme tak problém mačku dostatečně zmačkat, aby se do něj vlezla
+    \mypause \\ \vspace*{5pt}
+    
+    Mačky škrábou. Hlavě když na ně patláte lepidlo
+\end{frame}
+
+\begin{frame}
+\frametitle{Rizika spojená s používáním mačkostroje I}
+    Mačka nemůžeme omezit v pohybu, jinak by princip mačkostroje nefungoval
+    \mypause \\ \vspace*{5pt}
+
+    Pokud uteče ze spuštěného mačkostroje, tak začne i s chlebem na hřbetě volně levitovat po místnosti
+    \mypause \\ \vspace*{5pt}
+
+    Její naježený kožich je v tento moment plně nabitý elektrostatickou elektřinou 
+    \mypause \\ \vspace*{5pt}
+\end{frame}
+
+\begin{frame}
+\frametitle{Rizika spojená s používáním mačkostroje II}
+    Volně levitující naježená mačka nabitá elektrostatickou elektřinou způsobuje rušení signálu WiFi
+    \mypause \\ \vspace*{5pt}
+    
+    Po tomto zjištění jsme neprováděli žádné další experimenty
+    \mypause \\ \vspace*{5pt}
+    
+    Dalším rizikem je, že nepředvidatelnost mačky a složitá regulovatelnost mačkostroje
+    \mypause \\ \vspace*{5pt}
+    
+    Přetížení mačkostroje pak může způsobit lokální zmačkání vesmíru
+    \mypause \\ \vspace*{5pt}
+
+    Při použití černé mačky může zmačkání vesmíru vytvořit černou díru
+\end{frame}
+
+\section{Závěr}
+\begin{frame}
+    \frametitle{Závěr}
+    Naše závěry s mačkostrojem tedy jsou:
+    \mypause \\ \vspace*{20pt}
+    
+    \Huge{\centerline{\textbf{Nedělejte to}}}
+\end{frame}
+
+\end{document}

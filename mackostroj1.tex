@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\mode<presentation> {
+    
+    \usetheme{Berlin} %
+
+    \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\newcommand{\mypause}{\pause}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[FIplomová práce]{\textbf{Mačkostroj}\\Obhajoba FIplomové práce} 
+\author{Poznej FI} % Your name
+\institute[FI MU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+    Fakulta informatiky, Masarykova univerzita \\ % Your institution for the title page
+    \medskip
+    \textit{poznej@fi.muni.cz} % Your email address
+}
+\date{} % Date, can be changed to a custom date
+
+\begin{document}
+    
+    \begin{frame}
+    \titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Obsah} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Úvod}
+\begin{frame}
+    \frametitle{Principy fungování Mačkostroje}
+    \begin{block}{Zákon zachovania mačky}
+        Mačka vždy dopadne na všechny čtyři
+    \end{block}
+    \mypause
+    \begin{block}{23. Murphyho zákon}
+        Chleba vždy spadne na zem namazanou stranou
+    \end{block}
+    \mypause
+    \begin{block}{Oklamova břitva}
+        Nejjednodušší řešení je vždy to správné
+    \end{block}
+\end{frame}
+
+\section{Konstrukce}
+\begin{frame}
+    \frametitle{Konstrukce prototypu}
+    \begin{block}{Kaudální mačkostroj}
+        Pro převod energie z rotoru do vnějšího agregátu je realizován pomocí mechanického spojení kaudusu mačky se hřídelí.
+    \end{block}
+    \mypause
+    Obrazek
+\end{frame}
+
+\begin{frame}
+    \frametitle{Konstrukční omezení rotoru}
+    Pro výběr mačky pro kaudální mačkostroj je ovlivněn hlavně charakteristikami jejího ocasu
+    \begin{itemize}
+        \item \textbf{Délka}  --  pokud má mačka příliš krátký ocas, zůstane viset na hřídeli a nebude pokračovat v pádu
+        \item \textbf{Citlivost}  -- veškerá energie generovaná tímto zařízením je přenášena přes ocas. Mačky nemají rády, když je někdo tahá za ocas
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Vnější nádoba mačkostroje}
+    V principu není pro kaudální mačkostroj potřeba žádná vnější nádoba:
+    \begin{itemize}
+        \item Rotor je pevně spojen se hřídelí, takže mačka nemůže uniknout
+        \item Nádoba neyahrnuje žádné funkční komponenty
+        \mypause
+        \item Doporučujeme rotor umístit alespoň do klece, aby nedošlo k roztrhání závěsů rotující mačkou
+        \mypause
+        \item Pokud se v blízkosti mačkostroje budou pohybovat malé děti nebo Maara, doporučujeme plně obalující nádobu, aby nestrkal dovnitř prsty
+    \end{itemize}
+\end{frame}
+
+\section{Provoz mačkostroje}
+\begin{frame}
+    \frametitle{Monitoring a regulace}
+    \begin{itemize}
+        \item Díky absenci nádoby lze stav mačkostroje monitorovat pomocí systému \textquotedblleft kouknu se a vidím\textquotedblright
+        \mypause
+        \item Výkon lze jednoduše regulovat přibržďovním rotace hřídele
+        \mypause
+        \item Díky pevnému spojení hřídele s ocasem lze stroj rychle nouzově zastavit zataháním za hřídel. Mačka se lekne a tím dojde k náhlému přeuspořádání tlapek v rotoru
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Údržba zařízení}
+    Tento typ mačkostroje lze velice jednoduše udr6ovat i za běhu
+    \begin{itemize}
+        \item \textbf{Krmení mačky}  lze provádět za chodu stroje opatrným přiléváním mléka do úst rotoru
+        \mypause
+        \item \textbf{Doplnění másla}  na chleba zvládne zkušený operátor i za běhu stroje, protože agregát nemá vnější nádobu
+        \mypause
+        \item \textbf{Výměnu chleba}  není potřeba dělat příliš často, protoče drolící se kousky starého chleba nezanášejí žádné důležité komponenty
+    \end{itemize}
+\end{frame}
+
+\section{Závěr}
+\begin{frame}
+    \frametitle{Shrnutí}
+    \mypause
+    Kaudální varianta mačkostroje je vhodné zařízení do drsnějších podmínek
+    \\ \vspace*{5pt} \mypause 
+    Málo komponent znamená nízkou náchylnost k poruchám
+    \\ \vspace*{5pt} \mypause 
+    Lze použít i mačku bey srsti, takže jí není třeba pořád čistit kožich
+    \\ \vspace*{5pt} \mypause 
+    Má jednoduchou údržbu, kterou není třeba provádět příliš často
+\end{frame}
+
+\end{document}
